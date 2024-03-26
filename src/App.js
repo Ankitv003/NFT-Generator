@@ -11,6 +11,7 @@ const App = () => {
   const [selected, setSelected] = useState("#f44336");
 
   return (
+    <div className="container">
     <Layout>
       {!hide ? (
         <div
@@ -59,6 +60,7 @@ const App = () => {
       </button>
       <CirclePicker onChangeComplete={(color)=> setSelected(color.hex)}/>
     </Layout>
+</div>
   );
 };
 export default App;
